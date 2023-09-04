@@ -19,7 +19,7 @@ const list = document.querySelector('.gallery');
   .map(
       ({ url, alt}) =>
      `<li data-image>
-      <img src="${url}" alt="${alt}">
+      <img src="${url}" alt="${alt}" width=300px>
        <h2>${alt}</h2>
       </li>`
      )

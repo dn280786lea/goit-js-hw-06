@@ -1,10 +1,10 @@
- const validationLogin = document.querySelector(".login-form");
-validationLogin.addEventListener('submit', function (event) {
+    const validationLogin = document.querySelector(".login-form");
+    validationLogin.addEventListener('submit', function (event) {
     event.preventDefault();
- const emailInput = this.elements.email;
-  const passwordInput = this.elements.password;
+    const emailInput = this.elements.email;
+    const passwordInput = this.elements.password;
 
-  if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
+    if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
     alert('Все поля должны быть заполнены!');
     return; 
   }
@@ -13,6 +13,7 @@ validationLogin.addEventListener('submit', function (event) {
     password: passwordInput.value,
   };
 
-  console.log(formData); 
-  loginForm.reset(); 
+    console.log(formData); 
+    emailInput.value = '';
+    passwordInput.value = '';
 });
